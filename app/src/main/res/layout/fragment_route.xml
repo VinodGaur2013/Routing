@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.70">
+
+                <EditText
+                    android:id="@+id/et_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/source"
+                    android:inputType="text"
+                    android:background="@android:color/white"
+                    android:layout_margin="2dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/destination"
+                    android:inputType="text"
+                    android:id="@+id/et_destination"
+                    android:background="@android:color/white"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_show"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/find"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight=".30"
+                android:layout_margin="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

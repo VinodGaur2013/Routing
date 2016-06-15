@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad_color"
+    android:gravity="center"
+    android:id="@+id/rootLinearlaout"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        layout="@layout/toolbar" >
+    </include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pd"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true">
+
+
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_background"
+                android:layout_gravity="top"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:background="@drawable/test_selector"
+                android:textColorHint="@color/hint_text"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:id="@+id/etEmail"
+                android:textColor="@color/hint_text"
+                android:layout_margin="10dp" />
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <Button
+                android:id="@+id/btnSignupSubmit"
+                style="?android:textAppearanceSmall"
+                android:background="@drawable/test_selector_button"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/action_submit"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pd"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+
+</FrameLayout>

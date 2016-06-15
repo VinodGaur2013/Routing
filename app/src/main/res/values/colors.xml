@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b452</color>
+    <color name="colorPrimaryDark">#00ce63</color>
+    <color name="colorAccent">#8dd1b5</color>
+    <color name="md__defaultBackground">#FF555555</color>
+
+    <color name="md__transparent">#00000000</color>
+
+
+
+    <color name="hint_text">#ffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="background">#66565555</color>
+
+    <color name="colorGreen">#1cd419</color>
+
+    <color name="colorLogin">#00b452</color>
+    <color name="colorBackground">#f1434243</color>
+    <color name="text_color">#1d1c1c</color>
+
+    <color name="sliver">#9DA29F</color>
+    <color name="white">#FFFFFF</color>
+</resources>
